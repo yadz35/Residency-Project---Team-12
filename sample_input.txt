@@ -1,0 +1,18 @@
+1
+2026-10-01
+25.50
+Food
+Lunch
+1
+2026-10-02
+90.00
+Travel
+Train ticket
+4
+Food
+100.00
+5
+3
+2
+Food
+6

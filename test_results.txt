@@ -1,0 +1,16 @@
+SPENDSCOPE TEST RESULTS
+
+Python syntax check: PASS
+C++17 compilation with -Wall -Wextra -pedantic: PASS
+
+PYTHON KEY OUTPUT
+Overall total: $115.50
+Food: $25.50 | Budget $100.00 | Remaining $74.50 | WITHIN BUDGET
+Travel: $90.00
+Highest-spending category: Travel ($90.00)
+
+C++ KEY OUTPUT
+Overall total: $115.50
+Food: $25.50 | Budget $100.00 | Remaining $74.50 | WITHIN BUDGET
+Travel: $90.00
+Highest-spending category: Travel ($90.00)
