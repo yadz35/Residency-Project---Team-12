@@ -1,57 +1,106 @@
 # Residency-Project---Team-12
-SPENDSCOPE - DELIVERABLE 2
-Python and C++ Core Functionality Implementation
+# SpendScope
 
-FILES
-1. spendscope.py - Complete Python implementation
-2. main.cpp - Complete C++ implementation
-3. SpendScope_Deliverable_2_Report.docx - Submission-ready report
-4. sample_input.txt - Test data for both programs
-5. test_results.txt - Compilation and functional test results
+> **Deliverable 2 — Python and C++ Core Functionality Implementation**
 
-PYTHON REQUIREMENTS
+SpendScope is a command-line expense tracker implemented in both **Python** and **C++**. It supports expense entry, searching, filtering, budget tracking, category summaries, and input validation.
+
+## Project Files
+
+| File | Purpose |
+| --- | --- |
+| `spendscope.py` | Complete Python implementation |
+| `main.cpp` | Complete C++ implementation |
+| `SpendScope_Deliverable_2_Report.docx` | Submission-ready project report |
+| `sample_input.txt` | Test data for both implementations |
+| `test_results.txt` | Compilation and functional test results |
+
+## Features
+
+- [x] Add an expense
+- [x] View all expenses
+- [x] Search expenses by description
+- [x] Filter expenses by category
+- [x] Filter expenses by date range
+- [x] Set budgets for individual categories
+- [x] View overall and category totals
+- [x] Display budget status
+- [x] Identify the highest-spending category
+- [x] Validate dates, amounts, and menu selections
+
+## Python Setup
+
+### Requirements
+
 - Python 3.x
-- No third-party packages are required
+- No third-party packages required
 
-RUN PYTHON
+### Run the Program
+
+```bash
 python spendscope.py
+```
 
-CHECK PYTHON SYNTAX
+### Check the Python Syntax
+
+```bash
 python -m py_compile spendscope.py
+```
 
-C++ REQUIREMENTS
-- A compiler with C++17 support, such as g++
+### Run the Automated Sample Test
 
-COMPILE C++
-g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o spendscope_cpp
-
-RUN C++ ON LINUX OR MACOS
-./spendscope_cpp
-
-RUN C++ ON WINDOWS
-spendscope_cpp.exe
-
-AUTOMATED SAMPLE TEST - PYTHON
+```bash
 python spendscope.py < sample_input.txt
+```
 
-AUTOMATED SAMPLE TEST - C++
+## C++ Setup
+
+### Requirements
+
+- A compiler with C++17 support, such as `g++`
+
+### Compile the Program
+
+```bash
+g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o spendscope_cpp
+```
+
+### Run on Linux or macOS
+
+```bash
+./spendscope_cpp
+```
+
+### Run on Windows
+
+```powershell
+.\spendscope_cpp.exe
+```
+
+### Run the Automated Sample Test
+
+#### Linux or macOS
+
+```bash
 ./spendscope_cpp < sample_input.txt
+```
 
-CORE FEATURES
-- Add an expense
-- View all expenses
-- Search by description
-- Filter by category
-- Filter by date range
-- Set category budgets
-- View overall and category totals
-- Show budget status
-- Identify the highest-spending category
-- Validate dates, amounts, and menu selections
+#### Windows PowerShell
 
-EXPECTED SAMPLE RESULTS
-- Overall total: $115.50
-- Food total: $25.50
-- Travel total: $90.00
-- Food budget remaining: $74.50
-- Highest-spending category: Travel ($90.00)
+```powershell
+Get-Content sample_input.txt | .\spendscope_cpp.exe
+```
+
+## Expected Sample Results
+
+| Measurement | Expected Result |
+| --- | ---: |
+| Overall total | **$115.50** |
+| Food total | **$25.50** |
+| Travel total | **$90.00** |
+| Food budget remaining | **$74.50** |
+| Highest-spending category | **Travel ($90.00)** |
+
+## Verification
+
+After running either implementation with `sample_input.txt`, compare the program output with the expected values above. Detailed compilation and functional test results are available in `test_results.txt`.
